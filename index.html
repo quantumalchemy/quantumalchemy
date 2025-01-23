@@ -65,7 +65,7 @@ body {
   animation: fadeIn 2s forwards;
 }
 /* media */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	#myVideo {
 		left: 0;
 		width: 100%;
@@ -73,15 +73,15 @@ body {
 	}
 	
 	#info {
-	  top: 10%;
+	  top: 0;
 	  height: 8%;
 	  padding: 6px;
 	}
 	
 }
-@media screen and (orientation:landscape) {
+@media all and (max-width: 800px) and (max-height: 768px) and (orientation:landscape) {
 	#info {
-	  top: 10%;
+	  top: 50%;
 	  height: 8%;
 	  padding: 6px;
 	}
@@ -98,7 +98,8 @@ body {
 </video>
 
 <div id="info" class="fade-in-element">
-  Quantum ALchemy - Local Private In-House AI Consulting: New York 212.390.0776
+  Quantum ALchemy AI - Local Private In-House AI Consulting: New York 212.390.0776 
+  or <span onmousedown="this.innerHTML='<a href=\'mailto:info@quantumalchemy.net\'>Email</a>'" title="Contact">Email</span>
 </div>
 <div id="dash" class="radio">
 </div>
