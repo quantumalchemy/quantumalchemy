@@ -47,7 +47,7 @@ body {
   left: 0;
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
-  height: 14px;
+  height: 4%;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -64,11 +64,23 @@ body {
   opacity: 0;
   animation: fadeIn 2s forwards;
 }
-/* Removed content-wrapper as it's not needed */
+/* media */
+@media only screen and (max-width: 600px) {
+	#myVideo {
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+	#info {
+	  height: 8%;
+	  padding: 6px;
+	}
+	
+}
 </style>
 </head>
 <body>
-
 
 <video controls autoplay loop id="myVideo">
   <source src="https://bibliothecamagicarum.ai/qa3.mp4" type="video/mp4">
