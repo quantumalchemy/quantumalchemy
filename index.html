@@ -57,7 +57,7 @@ h1{font-size: 21px;}
   bottom: 0;
   background: rgba(0, 0, 0, 0);
   width: 100%;
-  height: 40%;
+  height: 80%;
   padding: 0px;
   z-index: 1;
   cursor: pointer;
@@ -106,9 +106,9 @@ h1{font-size: 21px;}
   Your browser does not support HTML5 video.
 </video>
 <div id="header" class="fade-in-element">
- <h1><span class="qa1">☿</span><span class="qa2">△</span> Quantum Alchemy AI <span class="qa3">Transforming AI for the Legal, Financial, Investigative and Private Sectors &#x25B6;</span></h1>
-
+ <h1 id="qainfo"><span class="qa1">☿</span><span class="qa2">△</span> Quantum Alchemy AI <span class="qa3"> &#x25B6;</span></h1>
  <div class="qa">
+Transforming AI for the Legal, Financial, Investigative and Private Sectors<br>
 At Quantum Alchemy AI, we empower businesses to take control of
 artificial intelligence and leverage its full potential—safely,
 securely, and with precision. Based in New York City, we specialize
@@ -196,6 +196,7 @@ approach to artificial intelligence.&nbsp; <br>
 var video = document.getElementById("myVideo");
 var dash = document.getElementById("dash");
 var header = document.getElementById("header");
+var qainfo = document.getElementById("qainfo");
 
 //video.addEventListener('pause', function(){
    //dash.innerHTML='Click Dash Play Video';
@@ -208,7 +209,7 @@ dash.addEventListener('click', () => {
   video.play(); 
 });
 
-header.addEventListener('click', () => {
+qainfo.addEventListener('click', () => {
 	if (header.style.maxHeight == "4%"){ 
 	header.style.maxHeight = "100%"; 
 	}else{
