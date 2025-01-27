@@ -77,7 +77,6 @@ h1{font-size: 24px;}
   animation: fadeIn 2s forwards;
 }
 
-
 @media only screen and (max-width: 800px) {
 	#myVideo {
 		left: 0;
@@ -195,7 +194,7 @@ h1{font-size: 24px;}
 </div>
 
 <div id="dash" class="radio">
- &#x25B6;
+ <span id="radio">&#x25B6;</span>
 </div>
 
 <script>
@@ -203,6 +202,7 @@ var video = document.getElementById("myVideo");
 var dash = document.getElementById("dash");
 var neonsign = document.getElementById("neon-sign");
 var qa = document.getElementById("qa");
+var radio = document.getElementById("radio");
 
 video.addEventListener("timeupdate", function() {
 	 console.log("V PLAYING");
@@ -218,18 +218,19 @@ video.addEventListener('pause', function(){
 })
 
 dash.addEventListener('click', () => {
- dash.innerHTML=' ';
-  video.currentTime = 10; 
+  radio.style.display = "none";
+  video.currentTime = 8; 
   video.play(); 
 });
 
 neonsign.addEventListener('click', () => {
 	console.log("OK");
+	qa.scrollTop = 0;
 	if (qa.style.display == "block"){ 
 	qa.style.display = "none";
 	}else{
-	qa.scrollTop = 0;
 	qa.style.display = "block";
+
 	}
 });
 
