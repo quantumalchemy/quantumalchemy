@@ -34,7 +34,7 @@
   font-size: 2vw;
   color: white;
   text-transform: uppercase;
-  -webkit-text-stroke: 2px #ff44daae;
+  -webkit-text-stroke: 2px #1a1aff;
   -webkit-text-fill-color: white;
 
   margin: 0;
@@ -52,19 +52,19 @@
 
 @keyframes neon-twinkle {
   0%, 100% {
-    text-shadow: 0 0 80px #ff44da, 0 0 16px #ff44da, 0 0 8px #ff44da;
+    text-shadow: 0 0 80px #1a1aff, 0 0 16px #1a1aff, 0 0 8px #1a1aff;
     opacity: 1;
   }
   50% {
-    text-shadow: 0 0 50px #ff44da, 0 0 10px #ff44da, 0 0 4px #ff44da;
+    text-shadow: 0 0 50px #1a1aff, 0 0 10px #1a1aff, 0 0 4px #1a1aff;
     opacity: 0.8;
   }
   70% {
-    text-shadow: 0 0 90px #ff44da, 0 0 20px #ff44da, 0 0 10px #ff44da;
+    text-shadow: 0 0 90px #1a1aff, 0 0 20px #1a1aff, 0 0 10px #1a1aff;
     opacity: 0.9;
   }
   85% {
-    text-shadow: 0 0 30px #ff44da, 0 0 8px #ff44da, 0 0 3px #ff44da;
+    text-shadow: 0 0 30px #1a1aff, 0 0 8px #1a1aff, 0 0 3px #1a1aff;
     opacity: 0.7;
   }
 }
